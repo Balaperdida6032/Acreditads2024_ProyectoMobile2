@@ -64,4 +64,5 @@ dependencies {
     implementation ("com.google.oauth-client:google-oauth-client-jetty:1.34.1")
     implementation ("com.fasterxml.jackson.core:jackson-databind:2.17.1")
 
+    implementation("com.google.android.material:material:1.12.0")
 }

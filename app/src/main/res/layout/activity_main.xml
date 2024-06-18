@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -24,62 +25,58 @@
         android:layout_marginTop="40dp"
         android:gravity="center"
         android:text="ACREDiTADS\nBIENVENIDO/A"
+        android:fontFamily="sans-serif-black"
         android:textSize="44sp"
       />
 
     <Button
         android:id="@+id/btnAgenda"
         android:layout_width="328dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:hint="AGENDA"
+        android:text="AGENDA"
         android:paddingHorizontal="75dp"
-        android:textColorHint="@color/white"
         android:textSize="30sp" />
 
     <Button
         android:id="@+id/btnRegistro"
         android:layout_width="332dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:hint="REGISTRO"
+        android:text="REGISTRO"
         android:paddingHorizontal="75dp"
-        android:textColorHint="@color/white"
         android:textSize="30sp" />
 
     <Button
         android:id="@+id/btnAcreditacion"
         android:layout_width="324dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:hint="ACREDITACIÓN"
+        android:text="ACREDITACIÓN"
         android:paddingHorizontal="75dp"
-        android:textColorHint="@color/white"
         android:textSize="24sp" />
 
     <Button
         android:id="@+id/btnMiActividad"
         android:layout_width="324dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:hint="MI ACTIVIDAD"
+        android:text="MI ACTIVIDAD"
         android:paddingHorizontal="75dp"
-        android:textColorHint="@color/white"
         android:textSize="24sp" />
 
     <Button
         android:id="@+id/btnAdministracion"
         android:layout_width="324dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:hint="ADMINISTRACIÓN"
+        android:text="ADMINISTRACIÓN"
         android:paddingHorizontal="75dp"
-        android:textColorHint="@color/white"
         android:textSize="20sp" />
 
     <TextView

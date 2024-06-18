@@ -16,7 +16,9 @@ android:layout_height="match_parent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/cardview_compat_inset_shadow"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
     <TextView
         android:id="@+id/tviewEventos"
         android:layout_width="match_parent"
@@ -24,11 +26,12 @@ android:layout_height="match_parent"
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="REGISTRO DE EVENTOS"
-        android:textSize="34sp" />
+        android:textSize="34sp"
+        android:fontFamily="sans-serif-black" />
 
     <EditText
         android:id="@+id/edtTituloEvento"
-        android:layout_width="wrap_content"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="Título del evento"
@@ -37,7 +40,7 @@ android:layout_height="match_parent"
 
     <EditText
         android:id="@+id/edtAutorEvento"
-        android:layout_width="wrap_content"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="Autor del evento"
@@ -46,7 +49,7 @@ android:layout_height="match_parent"
 
     <EditText
         android:id="@+id/edtTipoEvento"
-        android:layout_width="wrap_content"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="Conferencia1/taller2/curso3"
@@ -56,7 +59,7 @@ android:layout_height="match_parent"
 
     <EditText
         android:id="@+id/edtFechaHoraEvento"
-        android:layout_width="wrap_content"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="YYYY-MM-DD-HH-MM-SS"
@@ -65,62 +68,43 @@ android:layout_height="match_parent"
 
     <EditText
         android:id="@+id/edtIdAdminEvento"
-        android:layout_width="wrap_content"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="Id administrador del evento"
         android:inputType="number"
         android:gravity="center"
         android:textSize="20sp"/>
-    <EditText
-        android:id="@+id/tvLatitud"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="Latitud: "
-        android:gravity="center"
-        android:textSize="20sp"/>
-    <EditText
-        android:id="@+id/tvLongitud"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="Longitud: "
-        android:gravity="center"
-        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/btnAgregarMapa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="328dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
-        android:layout_marginTop="16dp"
-        android:hint="UBICAR"
+        android:layout_marginTop="40dp"
+        android:text="UBICAR"
         android:paddingHorizontal="75dp"
-        android:textColorHint="@color/white"
-        android:textSize="30sp" />
+        android:textSize="25dp" />
 
     <Button
         android:id="@+id/btnAgregar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="328dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:hint="AGREGAR"
+        android:text="AGREGAR"
         android:paddingHorizontal="75dp"
-        android:textColorHint="@color/white"
-        android:textSize="30sp" />
+        android:textSize="25dp" />
 
     <Button
         android:id="@+id/btnVolver"
-        android:layout_width="290dp"
-        android:layout_height="72dp"
+        android:layout_width="328dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:hint="VOLVER"
+        android:text="VOLVER"
         android:paddingHorizontal="75dp"
-        android:textColorHint="@color/white"
-        android:textSize="30sp" />
+        android:textSize="25dp" />
 
         </LinearLayout>
 

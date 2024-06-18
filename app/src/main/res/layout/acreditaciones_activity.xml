@@ -3,16 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:gravity="center"
+    android:padding="24dp">
 
     <TextView
         android:id="@+id/tviewAcreditaciones"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="ACREDITACIONES"
-        android:textSize="44sp" />
+        android:fontFamily="sans-serif-black"
+        android:textSize="30dp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -42,24 +44,22 @@
         android:textSize="20sp" /> -->
     <Button
         android:id="@+id/btnAgregarr"
-        android:layout_width="351dp"
-        android:layout_height="80dp"
+        android:layout_width="328dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="26dp"
-        android:hint="AGREGAR"
+        android:text="AGREGAR"
         android:paddingHorizontal="75dp"
-        android:textColorHint="@color/white"
         android:textSize="30sp" />
 
     <Button
         android:id="@+id/btnVolver"
-        android:layout_width="351dp"
-        android:layout_height="80dp"
+        android:layout_width="328dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="26dp"
-        android:hint="VOLVER"
+        android:text="VOLVER"
         android:paddingHorizontal="75dp"
-        android:textColorHint="@color/white"
         android:textSize="30sp" />
 
 </LinearLayout>
