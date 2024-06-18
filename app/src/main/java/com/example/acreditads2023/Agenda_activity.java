@@ -9,8 +9,7 @@ import android.webkit.WebView;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 public class Agenda_activity extends AppCompatActivity {
-    private Button btnInscripcion;
-    private Button btnVolver;
+    private Button btnInscripcion,btnVolver;
     private View view;
     @SuppressLint("MissingInflatedId")
     @Override

@@ -36,14 +36,12 @@ public class UbicarEventoActivity extends AppCompatActivity implements OnMapRead
     private final int FINE_PERMISSION_CODE = 123;
     private Circle circlePrevio;
     private Marker marker;
-    EditText txtLatitud, txtLongitud; //mis variables de Latitud(Norte, Sur) y Longitud(Este, Oeste)
-    GoogleMap mMap;
-    String nombreEvento;
-    Location currentLocation;
-    FusedLocationProviderClient fusedLocationProviderClient;
+    private EditText txtLatitud, txtLongitud; //mis variables de Latitud(Norte, Sur) y Longitud(Este, Oeste)
+    private GoogleMap mMap;
+    private String nombreEvento,LatitudString,LongitudString;
+    private Location currentLocation;
+    private FusedLocationProviderClient fusedLocationProviderClient;
 
-    private String LatitudString;
-    private String LongitudString;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,9 +54,8 @@ public class UbicarEventoActivity extends AppCompatActivity implements OnMapRead
         txtLongitud = findViewById(R.id.txtLongitud);
 
         nombreEvento = getIntent().getStringExtra("NombreEvento");
-        //###########################################################################################
+
         //###############  Devuelve los valores latitud y longitud   ################################
-        //
         btnConfirmar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,8 +80,6 @@ public class UbicarEventoActivity extends AppCompatActivity implements OnMapRead
 
             }
         });
-        //###########################################################################################
-        //###########################################################################################
     }
 
     //################################### AFUERA DEL onCreate #######################################
@@ -107,9 +102,7 @@ public class UbicarEventoActivity extends AppCompatActivity implements OnMapRead
             }
         });
     }
-    //###########################################################################################
 
-    //###########################################################################################
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         mMap = googleMap;
@@ -121,9 +114,7 @@ public class UbicarEventoActivity extends AppCompatActivity implements OnMapRead
         // mMap.addMarker(new MarkerOptions().position(uruguay).title("mi ubicacion"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(uruguay));
     }
-    //###########################################################################################
 
-    //###########################################################################################
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -135,9 +126,7 @@ public class UbicarEventoActivity extends AppCompatActivity implements OnMapRead
             }
         }
     }
-    //###########################################################################################
 
-    //###########################################################################################
     @Override
     public void onMapClick(@NonNull LatLng latLng) {
         txtLatitud.setText(""+latLng.latitude);
@@ -163,9 +152,7 @@ public class UbicarEventoActivity extends AppCompatActivity implements OnMapRead
         // dibuja mi circulo
         drawCircle(latLng,30);
     }
-    //###########################################################################################
 
-    //###########################################################################################
     @Override
     public void onMapLongClick(@NonNull LatLng latLng) {
         txtLatitud.setText(""+latLng.latitude);
@@ -180,5 +167,4 @@ public class UbicarEventoActivity extends AppCompatActivity implements OnMapRead
                 .strokeColor(Color.RED)
                 .fillColor(Color.argb(70,255,0,0)));
     }
-    //###########################################################################################
 }

@@ -3,15 +3,10 @@ package com.example.acreditads2023;
 import android.widget.Button;
 
 public class Acreditaciones {
-    private int idInstalacion;
-    private int idUsuario;
-    private String timeStamp;
-    private String lecturaQR = "";
+    private int idInstalacion,idUsuario;
+    private String timeStamp,lecturaQR = "";
 
-
-    public Acreditaciones(){
-
-    }
+    public Acreditaciones(){}
     public Acreditaciones(int idUsuario, String timeStamp, String lecturaQR) {
         this.idInstalacion = idInstalacion;
         this.idUsuario = idUsuario;

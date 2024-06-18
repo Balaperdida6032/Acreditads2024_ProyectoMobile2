@@ -4,7 +4,6 @@ public class Consulta_validacion {
 
     private final String clave = "a3fe4cb822574d5eb3dd4089a9d9f801";
     private String email;
-
     public Consulta_validacion (){
 
     }

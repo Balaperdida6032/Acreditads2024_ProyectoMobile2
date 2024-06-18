@@ -9,8 +9,7 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AccesoAdministradores extends AppCompatActivity {
-    private String claveAdm;
-    private String tareaUsuario;
+    private String claveAdm,tareaUsuario;
     private Button btnVolver;
 
     public AccesoAdministradores(String claveAdm, String tareaUsuario) {

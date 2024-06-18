@@ -38,7 +38,5 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(getApplicationContext(), Consulta_id.class);
             startActivity(intent);
         });
-
-
     }
 }

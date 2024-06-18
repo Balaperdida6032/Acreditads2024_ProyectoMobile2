@@ -3,12 +3,8 @@ package com.example.acreditads2023;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Evento extends AppCompatActivity {
-    private int idEvento;
-    private  String tituloEvento;
-    private  String autorEvento;
-    private  int tipoEvento;
-    private String fechaHoraEvento;
-    private  int idAdminEvento;
+    private  String tituloEvento,autorEvento,fechaHoraEvento;
+    private  int idEvento,tipoEvento,idAdminEvento;
 
     public Evento(){
         this.idEvento= -1;

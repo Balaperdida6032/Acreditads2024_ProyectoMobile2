@@ -26,16 +26,10 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Usuario_activity extends AppCompatActivity {
-    private EditText edtNombreUsuario;
-    private EditText edtApellidoUsuario;
-    private EditText edtDocUsuario;
-    private EditText edtEmailUsuario;
-    private EditText edtTipoUsuario;
+    private EditText edtNombreUsuario,edtApellidoUsuario,edtDocUsuario,edtEmailUsuario,edtTipoUsuario;
     private Database db;
-    private Button btnRegistro;
-    private Button btnVolver;
+    private Button btnRegistro,btnVolver;
     private String idPlanilha = "1g6dIJTiR-4eIzbnwKUK6sXDjC6GYMCRElsbr_bVxPDQ";
-
     private RequestQueue requestQueue;
 
     String range = "Sheet1A1:B2";

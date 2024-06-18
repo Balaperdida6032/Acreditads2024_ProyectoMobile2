@@ -3,14 +3,8 @@ package com.example.acreditads2023;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Usuario extends AppCompatActivity {
-    private int idUsuario;
-    private String nombreUsuario;
-    private String apellidoUsuario;
-    private String docUsuario;
-    private String emailUsuario;
-    private int tipoUsuario;
-    private String tareaUsuario;
-    private String fechaHora;
+    private int idUsuario,tipoUsuario;
+    private String nombreUsuario,apellidoUsuario,docUsuario,emailUsuario,tareaUsuario,fechaHora;
 
     public Usuario() {
         this.idUsuario = -1;
